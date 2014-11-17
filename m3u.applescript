@@ -1,6 +1,6 @@
 ﻿(*
   David Miller
-  http://readmeansrun.com/code/m3u
+  https://github.com/davidfmiller/m3u
 *)
 
 set LINEBREAK to "
