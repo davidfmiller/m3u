@@ -109,10 +109,10 @@ do shell script "open " & my unixpath(f)
 
 
 (*
-  #todo
+  Return a copy of a string with slashes removed
 
-  @param str
-  @return str
+  @param str (string) 
+  @return string
 *)
 on sanitize(str)
   set buf to ""
@@ -126,7 +126,7 @@ end sanitize
 
 
 (*
-  
+  Truncate a string to a given number of characters, if necessary
 
   @param str (string) - the string to be truncated
   @param len (int) - the maximum length of the string
@@ -150,8 +150,9 @@ on truncate(str, len)
 end truncate
 
 (*
-  
-  @param paths ()
+  Build a UNIX-style path from a list of components
+
+  @param paths (list) - array of components to be included in the resulting path
   @return string
 *)
 on unixpath(paths)
@@ -244,9 +245,9 @@ on split(str, delimiter)
 end split
 
 (*
-  #todo
+  Left-pad a string 
 
-  @param str (string)
+  @param str (string) - the string of characters to be padded
   @param char (char) - the character to be inserted 
   @param len (int) - the number of characters that should be contained in the string after being padded
   @return string
@@ -262,7 +263,7 @@ on lpad(str, char, len)
 end lpad
 
 (*
-  #todo
+  Return a string within quotes with the necessary values escaped (ex: `"` and `\`) to ensure valid parsing
 
   @param str (string) - 
   @return string
@@ -282,8 +283,8 @@ end enquote
 (*
   Return the maximum of two numbers
 
-  @param x (num) - 
-  @param y (num) - 
+  @param x (num)
+  @param y (num)
   @return num
 *)
 on max(x, y)
@@ -296,8 +297,8 @@ end max
 (*
   Return the minimum of two numbers
 
-  @param x (num) - 
-  @param y (num) - 
+  @param x (num)
+  @param y (num)
   @return num
 *)
 on min(x, y)
@@ -310,8 +311,8 @@ end min
 (*
   Calculate the number of characters required to represent an integer in string format
 
-  @param x - int
-  @return int - the number of digits required to represent x
+  @param x (int) - 
+  @return int - the number of digits required to represent x in 
 *)
 on digits(x)
 
@@ -341,7 +342,7 @@ on int(d)
 end int
 
 (*
-  #todo
+  Round a float to a given number of digits
 
   @param n - number to be rounded
   @param d - precision (# of decimals)
