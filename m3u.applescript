@@ -98,7 +98,7 @@ end tell
 
 
 
-do shell script ("echo " & (quoted form of "# created by http://readmeansrun.com/code/m3u v" & VERSION_NUMBER) & " >> " & m3u)
+do shell script ("echo " & (quoted form of "# created by https://github.com/davidfmiller/m3u v" & VERSION_NUMBER) & " >> " & m3u)
 
 
 do shell script "open " & my unixpath(f)
