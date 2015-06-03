@@ -5,6 +5,6 @@ m3u is a simple [Applescript](https://developer.apple.com/library/mac/documentat
 
     > osascript m3u.applescript
 
-** Todo
+## Todo
 
 - Run `xattr` to strip metadata from files after exported
