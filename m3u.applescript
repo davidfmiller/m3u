@@ -7,7 +7,6 @@ set LINEBREAK to "
 "
 set VERSION_NUMBER to "0.1"
 
-
 -- the number of songs for which the user should be prompted to confirm they want to export
 set MAX_LENGTH_CHECK to 100
 
