@@ -7,4 +7,4 @@ m3u is a simple [Applescript](https://developer.apple.com/library/mac/documentat
 
 ## Todo
 
-- Run `xattr` to strip metadata from files after exported
+ - todo

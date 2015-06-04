@@ -100,6 +100,7 @@ end tell
 
 do shell script ("echo " & (quoted form of "# created by https://github.com/davidfmiller/m3u v" & VERSION_NUMBER) & " >> " & m3u)
 
+do shell script "xattr -r -c " & my unixpath(f)
 
 do shell script "open " & my unixpath(f)
 
